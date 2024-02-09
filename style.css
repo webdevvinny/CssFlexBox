@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.menu-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  list-style: none;
+  overflow: hidden;
+}
+
+.menu-container ul li {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.menu-container ul li:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.sub-menu-container ul {
+  flex-direction: column;
+  display: none;
+}
+
+.menu-container ul li:last-child:hover .sub-menu-container ul {
+  display: block;
+  overflow: hidden;
+}
